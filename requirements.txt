@@ -1,5 +1,5 @@
 discord.py
-requsts
+requests
 websockets
 json
 python-dotenv
