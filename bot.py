@@ -10,6 +10,7 @@ from dotenv import load_dotenv
 # load secret bot token
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
+CODENAMES_ROLE = os.getenv('CODENAMES_ROLE')
 
 client = discord.Client()
 
@@ -46,6 +47,7 @@ async def on_message(message):
         outputJson = r.json()
         url = 'https://codenames.game/room/' + outputJson['game']['name']
         await message.channel.send(url)
+        await message.channel.send("<@&%s>" % CODENAMES_ROLE)
 
 client.run(TOKEN)
 
