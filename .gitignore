@@ -1,0 +1,7 @@
+secret.txt
+.env
+node_modules/
+secret*.txt
+myinstants*
+old*
+~

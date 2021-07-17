@@ -1,0 +1,36 @@
+{
+  "name": "gamebot",
+  "version": "1.0.0",
+  "description": "add codenames and scribbl.io functionality to discord",
+  "main": "index.js",
+  "watch": {
+    "build": "*.js"
+  },
+  "scripts": {
+    "build": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npm-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vrMars/GameBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vrMars/GameBot/issues"
+  },
+  "homepage": "https://github.com/vrMars/GameBot#readme",
+  "dependencies": {
+    "@discordjs/opus": "^0.5.0",
+    "cheerio": "^1.0.0-rc.5",
+    "discord.js": "^12.5.1",
+    "ffmpeg": "0.0.4",
+    "ffmpeg-static": "^4.3.0",
+    "html-entities": "^2.3.2",
+    "npm-watch": "^0.7.0",
+    "probe-image-size": "^7.0.1",
+    "puppeteer": "^8.0.0",
+    "request": "^2.88.2"
+  }
+}
